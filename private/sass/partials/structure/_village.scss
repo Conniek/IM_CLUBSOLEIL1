@@ -1,0 +1,338 @@
+.title {
+	&__primary {
+		font-family: $t-title;
+		font-size: 65px;
+		color: $c-bluelight;
+		font-weight: 100;
+		&.plus {
+			color: #FFF;
+			font-size: 120px;
+			letter-spacing: 12px;
+		    margin-top: 20px;
+		    margin-bottom: 10px;
+		}
+	}
+	&__secondary {
+		font-family: $t-text;
+		font-weight: 400;
+		color: $c-yellow;
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	&__classic {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 16px;
+		color: $c-classic;
+		&.plus {
+			color: #FFF;
+			font-weight: 600;
+			letter-spacing: 2px;
+			font-size: 17px
+		}
+		&.normal {
+			color: #FFF;
+			letter-spacing: 3px;
+			font-size: 13px;
+		}
+	}
+	&__special {
+		background-color: $c-blue;
+		color: #FFF;
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 14px;
+		letter-spacing: 5px;
+		padding: 0 20px 1px;
+	}
+	&__number {
+		color: $c-yellow;
+		font-family: $t-text;
+	    font-size: 70px;
+	    font-weight: bold;
+	    line-height: 70px;
+	    letter-spacing: 3px;
+	}
+}
+
+.title__number {
+	sup {
+		font-size: 15px !important;
+	}
+}
+
+.text {
+	&__small-caps {
+		font-size: 12px;
+		font-weight: bold;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin-top: 2px;
+	}
+
+	&__small {
+		font-size: 10px;
+	}
+
+}
+
+.down-icon {
+	border-radius: 100%;
+	font-size: 15px;
+	background-color: #FFF;
+	width: 30px;
+	height: 30px;
+	color: $c-yellow;
+	line-height: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%) rotate(90deg);
+}
+
+ul {
+	&.list-design {
+		li {
+			&::before { 
+				content: "•";
+				color: #ffc000;
+				vertical-align: initial;
+
+			}
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+	}	
+}
+
+.icons-and-text {
+	text-align: center;
+	display: inline-block;
+	font-weight: normal;
+	color: #FFF;
+	width: 15%;
+	img {
+		display: block;
+		margin: 0 auto 10px;
+		width: 50%;
+	}
+	span {
+		font-size: 14px;
+		display: block;
+		line-height: 16px;
+		b {
+			display: block;
+		}
+	}
+}
+
+.block-image {
+	&-style1 {
+		border: 2px solid $c-blue;
+		text-align: center;
+		padding: 10px 20px 20px 20px;
+		h4 {
+			position: relative;
+			top: -25px;
+		}
+		h5 {
+			margin-top: 20px;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+	}
+
+	&-style2 {
+		position: relative;
+		img {
+			display: block;
+			width: 100%;
+		}
+		.frame-text {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			width: calc(100% - 30px);
+			height: calc(100% - 30px);
+			border: 1px solid #FFF;
+			strong {
+				color: #FFF;
+				display: block;
+				position: absolute;
+				bottom: 10px;
+				width: 100%;
+				text-align: center;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.frameTitle {
+	border-top: 6px solid #FFF;
+	border-right: 6px solid #FFF;
+	border-left: 6px solid #FFF;
+	color: #FFF;
+	position: relative;
+	.borderLeft {
+		content: ""; 
+		display: block; 
+		width: 45%; 
+		position: absolute;
+		left: -6px;
+		border-bottom: 6px solid #FFF; 
+		bottom: 0;
+	}
+	.borderRight {
+		content: ""; 
+		display: block; 
+		width: 45%; 
+		position: absolute;
+		right: -6px;
+		border-bottom: 6px solid #FFF; 
+		bottom: 0;
+	}
+	.title__special {
+		position: relative;
+		background-color: #FFF;
+		color: $c-bluelight;
+		top: -25px;
+	}
+}
+
+
+.frameText {
+	padding: 10px 15px 30px;
+	border-top: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+	color: #FFF;
+	position: relative;
+	.borderLeft {
+		content: ""; 
+		display: block; 
+		width: 44%; 
+		position: absolute;
+		left: -1px;
+		border-bottom: 1px solid #FFF; 
+		bottom: 0;
+	}
+	.borderRight {
+		content: ""; 
+		display: block; 
+		width: 44%; 
+		position: absolute;
+		right: -1px;
+		border-bottom: 1px solid #FFF;; 
+		bottom: 0;
+	}
+}
+
+.group-title {
+	text-align: center;
+	h2 {
+		margin-top: 50px;
+		line-height: 80px;
+	}
+	p {
+		margin-top: 15px;
+	}
+}
+
+
+.headerBanner {
+	background: url(../img/bg-home.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	text-align: center;
+	padding-bottom: 30px;
+
+	.logo {
+		max-width: 210px;
+		margin: 0 auto;
+	}
+	.frameTitle {
+		
+		@media screen and (min-width: 1025px) {
+			width: 60%;
+			max-width: 600px;
+		}
+		@include breakpoint($b-mob){
+			width: 65%;
+		}
+		width: 60%;
+		
+		margin : 70px auto;
+		padding: 10px 25px 25px;
+
+
+	}
+}
+
+.deuxAlpes {
+
+}
+
+.slider {
+	&__deuxAlpes {
+		margin-top: 30px;
+	}
+}
+
+.notreVillage {
+	.group-bloc-image {
+		text-align: center;
+		margin-top: 40px;
+		.block-image-style2 {
+			width: 23%;
+			display: inline-block;
+			margin-right: 20px;
+		}		
+	}
+}
+
+.votreOffre {
+	background: url(../img/bg-VotreOffre.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 50px;
+	margin-top: 30px;
+	h2, h3 {
+		color: #FFF !important;
+	}
+}
+
+.list-item {
+	display: inline-block;
+}
+
+.group-list {
+	display: flex;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.group-img-list {
+	.block-image-style1 {
+		width: 23%;
+		display: inline-block;
+	}
+}
+
+.slider__destinations {
+	margin-top: 40px;
+}
+
+.mentions {
+	margin-top: 20px;
+	text-align: center;
+	padding: 30px 0;
+}
+

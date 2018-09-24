@@ -1,0 +1,84 @@
+.marketing {
+
+    &__wrapper {
+        @include clearfix;
+        padding: 10px;
+        background-color: $c-yellow;
+        text-align: center;
+        color: $c-complement;
+
+        &.fixed {
+            position: fixed;
+            bottom: 0;
+            z-index: 11;
+            width: 100%;
+        }
+
+        &.in-header {
+            position: static !important;
+        }
+    }
+
+    &__inner {
+        margin: auto;
+        position: relative;
+    }
+
+    &__txt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        &--1 {
+            font-family: $t-text;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: $c-classic;
+            margin-right: 10px;
+        }
+
+        &--2 {
+            font-size: rem(52px);
+            text-transform: uppercase;
+            font-weight: bold;
+
+            @include breakpoint($b-tab-desk) {
+                letter-spacing: 1px;
+            }
+        }
+
+        &--3 {
+            clear: both;
+            font-size: rem(15px);
+            margin-bottom: 0;
+
+        }
+
+        &--4 {
+            letter-spacing: 4px;
+            font-size: rem(15px);
+            margin-bottom: 0;
+            border: 1px solid #FFF;
+            padding: 12px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    &__cta {
+        width: 100%;
+        display: inline-block;
+        max-width: 200px;
+        color: $c-yellow;
+        font-family: $t-text;
+        background-color: $c-complement;
+        border: none;
+        font-size: rem(20px);
+        margin-left: 10px;
+        font-weight: 400;
+
+
+    }
+}

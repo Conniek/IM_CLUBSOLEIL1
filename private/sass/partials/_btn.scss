@@ -1,0 +1,108 @@
+// btn classic
+.btn {
+  border: 2px solid $c-theme;
+  color: $c-theme;
+  font-family: $t-title;
+  font-weight: lighter;
+  font-size: rem(15px);
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include darkenHover($c-theme);
+  &:hover {
+    color: $c-complement;
+  }
+
+  @include breakpoint($b-desk) {
+    padding: 10px 15px;
+    font-size: rem(18px);
+  }
+
+  @include breakpoint($b-xlarge){
+    font-size: rem(23px);
+  }
+
+  &--reverse {
+    background: $c-complement;
+    color: $c-theme;
+
+    @include darkenHover($c-complement);
+  }
+}
+
+//link_up
+.up {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: $c-theme;
+  text-align: center;
+  z-index: z('high');
+
+  &__arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid $c-complement;
+    margin-top: 17px;
+  }
+
+  @include darkenHover($c-theme);
+}
+
+//social
+.social {
+
+  @include breakpoint($b-desk){
+    position: fixed;
+    top: 25%;
+    right: 0;
+    z-index: z('high');
+  }
+
+  &__share {
+    display: inline-block;
+    margin-top: 40px;
+
+    @include breakpoint($b-desk){
+      display: block;
+      margin: 0;
+    }
+  }
+  &__item {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 47px;
+    color: $c-complement;
+    text-align: center;
+    font-size: rem(25px);
+    background: $c-theme;
+
+    @include breakpoint($b-desk){
+      display: block;
+      width: 45px;
+      height: 45px;
+    }
+
+    &--facebook {
+      @include darkenHover($c-facebook, 0);
+    }
+    color: $c-complement;
+
+    &--twitter {
+      @include darkenHover($c-twitter, 0);
+    }
+  }
+}
+
+.event:not(.linkAfter) {
+  cursor: pointer;
+}

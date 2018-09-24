@@ -1,0 +1,28 @@
+<header class="header">
+
+    <a href="https://secure.fr.vente-privee.com/ns/fr-fr/home/default" class="header__back-to-vp event" data-event="TagEvent::Exit" data-label="Back to VP">
+        <img src="./img/back-to-vp.png" alt="Retourner sur vente-privee">
+    </a>
+
+    <div class="header__navbar no-desktop">
+        <div class="header__navbar__hamburger js-menu"></div>
+        <img class="header__navbar__logo" src="./img/logo-kerastase-black.png" alt="Kérastase Paris">
+    </div>
+
+    <div class="header__menu">
+        <div class="header__container">
+            <div class="header__menu__logo desktop-only">
+                <img class="header__navbar__logo" src="./img/logo-kerastase-black.png" alt="Kérastase Paris">
+            </div>
+
+            <ul>
+                {% for menu in trad.menus %}
+                    <li class="header__menu__item {{ menu.additionalClass }}"><a href="#" class="header__menu__link js-menu-nav scrollTo event" data-label="{{ menu.title }}" data-event="TagEvent::Page" data-scroll=".screen--{{ loop.index }}">{{ menu.title }}</a></li>
+                {% endfor %}
+                <li class="header__menu__item"><a href="{{ trad.links.generic }}" class="header__menu__link header__menu__link--exit event" target="_blank" data-label="Trouvez un salon" data-event="TagEvent::Exit">{{ trad.menu_external }}</a></li>
+            </ul>
+            {% include './marketing.html.twig' %}
+        </div>
+    </div>
+
+</header>
