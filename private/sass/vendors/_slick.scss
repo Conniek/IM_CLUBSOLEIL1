@@ -95,3 +95,20 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick-dots {
+    bottom: -25px !important;
+    li {
+       width: 50px !important; 
+
+       button:before {
+        background-color: gray !important;
+        border: 2px solid gray !important;
+       }
+
+       &.slick-active button:before {
+           background-color: #ffc000 !important;
+           border: 2px solid #ffc000 !important;
+       }
+    }
+}

@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-right-arrows-couple:before {
+  content: "\e912";
+}
 .icon-facebook:before {
   content: "\e908";
 }
@@ -119,6 +122,9 @@
 }
 .icon-carte-rose-avantage-2:before {
   content: "\e931";
+}
+.icon-logo-villageClubColor:before {
+  content: "\e913";
 }
 .icon-airfrance-by-perfectstay:before {
   content: "\e937";
