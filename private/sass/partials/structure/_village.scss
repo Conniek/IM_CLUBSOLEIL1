@@ -1,7 +1,7 @@
 .title {
 	&__primary {
 		font-family: $t-title;
-		font-size: 65px;
+		font-size: 3.3rem;
 		color: $c-bluelight;
 		font-weight: 100;
 		&.plus {
@@ -10,6 +10,14 @@
 			letter-spacing: 12px;
 		    margin-top: 20px;
 		    margin-bottom: 10px;
+		    @media screen and (max-width: 860px) {
+		    	font-size: 95px;
+    			letter-spacing: 8px;
+		    }
+		    @include breakpoint($b-mob){
+		    	font-size: 70px;
+		    	letter-spacing: 0px;
+		    }
 		}
 	}
 	&__secondary {
@@ -45,6 +53,10 @@
 		font-size: 14px;
 		letter-spacing: 5px;
 		padding: 0 20px 1px;
+		@include breakpoint($b-tab-desk) {
+			font-size: 13px;
+			letter-spacing: 1px;
+		}
 	}
 	&__number {
 		color: $c-yellow;
@@ -93,7 +105,6 @@
 ul {
 	&.list-design {
 		li {
-			display: inline-flex;
 			&::before { 
 				content: "•";
 				color: #ffc000;
@@ -117,6 +128,9 @@ ul {
 	font-weight: normal;
 	color: #FFF;
 	width: 15%;
+	@include breakpoint($b-mob) {
+		width: 45%;
+	}
 	img {
 		display: block;
 		margin: 0 auto 10px;
@@ -173,6 +187,11 @@ ul {
 				width: 100%;
 				text-align: center;
 				font-size: 15px;
+				@include breakpoint($b-mob){
+					width: 80%;
+					transform: translate(-50%, 0%);
+					left: 50%;
+				}
 			}
 		}
 	}
@@ -246,6 +265,9 @@ ul {
 	}
 	p {
 		margin-top: 15px;
+		@include breakpoint($b-mob){
+			padding: 0 20px;
+		}
 	}
 }
 
@@ -256,26 +278,25 @@ ul {
 	padding-top: 20px;
 	text-align: center;
 	padding-bottom: 30px;
-
+	@include breakpoint($b-mob){
+		background-position: 60% 0px;
+	}
 	.logo {
 		max-width: 210px;
 		margin: 0 auto;
 	}
 	.frameTitle {
-		
+		width: 60%;
+		margin : 70px auto;
+		padding: 10px 25px 25px;
 		@media screen and (min-width: 1025px) {
 			width: 60%;
 			max-width: 600px;
 		}
 		@include breakpoint($b-mob){
-			width: 65%;
+			width: 90%;
+			margin-top: 30px;
 		}
-		width: 60%;
-		
-		margin : 70px auto;
-		padding: 10px 25px 25px;
-
-
 	}
 }
 
@@ -307,10 +328,18 @@ ul {
 	}
 }
 
-.slider {
-	&__deuxAlpes {
-		margin-top: 30px;
-		margin-bottom: 80px;
+.slider__deuxAlpes {
+	margin-top: 30px;
+	margin-bottom: 80px;
+
+	.slider__item {
+		@include breakpoint($b-mob) {
+			img {
+				display: none;
+			}
+			height: 300px;
+			background-size: cover;
+		}
 	}
 }
 
@@ -322,6 +351,9 @@ ul {
 			width: 23%;
 			display: inline-block;
 			margin-right: 15px;
+			@include breakpoint($b-mob) {
+				width: 100%;
+			}
 		}		
 	}
 }
@@ -341,21 +373,59 @@ ul {
 	}
 	.group-icons {
 		margin-top: 30px;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-flex-flow: row wrap;
+	    justify-content: space-around;
+	    .icons-and-text {
+	    	width: 20%;
+	    }
+	     @include breakpoint($b-mob) {
+	     	flex-wrap: wrap;
+	     	.icons-and-text {
+	    		width: 50%;
+	    		margin-bottom: 40px;
+	    		span {
+				    min-height: 50px;
+				    width: 80%;
+				    margin: 0 auto;
+	    		}
+	    	}
+	     }
+
+
 	}
 }
 
 .list-item {
-	display: inline-block;
+	width: 48%;
 }
 
 .group-list {
-	display: flex;
 	margin-top: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    display: flex;
+    -webkit-box-pack: justify;
+    flex-direction: row;
+    flex-flow: initial;
+    justify-content: space-between;
+    @include breakpoint($b-mob) {
+    	flex-flow: wrap;
+    }
 	.list-design {
-		margin-top: 15px;
+	    margin-top: 5px;
+	    margin-bottom: 10px;
+	    @include breakpoint($b-mob) {
+	    	font-size: 13px;
+	    }
+	}
+	.title__special {
+		@include breakpoint($b-mob) {
+		    font-size: 12px;
+		    letter-spacing: 2px;
+		}
 	}
 }
 
@@ -364,6 +434,9 @@ ul {
 		width: 23%;
 		display: inline-block;
 		margin-right: 30px;
+		@include breakpoint($b-mob) {
+			margin-right: 0;
+		}
 	}
 }
 
@@ -376,17 +449,27 @@ ul {
 		.title__special {
 			position: relative;
 			top: -20px;
+			@include breakpoint($b-mob) {
+				top: -23px;
+			}
 		}
 		.block-image-style1 h4 {
 			top: unset;
 			margin-top: 10px;
 		}
 	}
+	@include breakpoint($b-mob) {
+		.slick-dots {
+			bottom: -40px !important; 
+			li {
+				width: 40px !important;
+			}
+		}
+	}
 }
 
 .mentions {
-	margin-top: 20px;
 	text-align: center;
-	padding: 30px 0;
+	padding: 40px 0;
 }
 

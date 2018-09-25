@@ -4,15 +4,15 @@
             <img src="img/logo-villageClub.png" alt="" />
         </div>
         <div class="frameTitle">
-            <div class="title__special">Nouveauté</div>
+            <div class="title__special">{{trad.screen1.titleSpecial}}</div>
             <div class="borderLeft"></div>
             <div class="borderRight"></div>
             <div class="frameText">
-                <div class="title__classic plus">cet hiver, évadez-vous aux</div>
-                <div class="title__primary plus">2 Alpes</div>
-                <div class="title__classic normal">offre exclusive-vente-privee</div>
-                <div class="title__number">-15%<sup>*</sup></div>
-                <div class="text__small-caps">sur votre séjour au ski</div>
+                <div class="title__classic plus">{{trad.screen1.txt1}}</div>
+                <div class="title__primary plus">{{trad.screen1.txt2}}</div>
+                <div class="title__classic normal">{{trad.screen1.txt3}}</div>
+                <div class="title__number">{{trad.screen1.txt4}}</div>
+                <div class="text__small-caps">{{trad.screen1.txt5}}</div>
                 <div class="borderLeft"></div>
                 <div class="borderRight"></div>
             </div>
@@ -25,102 +25,57 @@
 <div class="screen screen--2 deuxAlpes">
     <div class="container">
         <div class="group-title">
-            <h2 class="title__primary">les 2 alpes</h2>
-            <h3 class="title__secondary">Le must de la glisse</h3>
-            <p><b>Situé à moins d'1 heure 30 de Grenoble,</b> les 2 Alpes est l'une des plus grandes stations internationales de ski.</p>
+            <h2 class="title__primary">{{trad.screen2.groupTitle.h2}}</h2>
+            <h3 class="title__secondary">{{trad.screen2.groupTitle.h3}}</h3>
+            <p>{{trad.screen2.groupTitle.paraph}}</p>
         </div>
     </div>
     <div class="slider__deuxAlpes">
-        <div class="slider__item block-image-style2">
-            <img src="img/bg2Alpes/1.jpg" alt="" />
-            <div class="frame-text container">
-                <strong>Station familiale et festive, activités Indoor, Label famille plus</strong>
+        {% for slide in trad.slider2Alpes %}
+            <div class="slider__item block-image-style2" style="background-image: url(../img/bg2Alpes/{{ loop.index }}.jpg)">
+                <img src="img/bg2Alpes/{{ loop.index }}.jpg" alt="" />
+                <div class="frame-text container">
+                    <strong>{{ slide.text}}</strong>
+                </div>
             </div>
-        </div>
-        <div class="slider__item block-image-style2">
-            <img src="img/bg2Alpes/2.jpg" alt="" />
-            <div class="frame-text container">
-                <strong>Station familiale et festive, activités Indoor, Label famille plus</strong>
-            </div>
-        </div>
-        <div class="slider__item block-image-style2">
-            <img src="img/bg2Alpes/3.jpg" alt="" />
-            <div class="frame-text container">
-                <strong>Station familiale et festive, activités Indoor, Label famille plus</strong>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 
 <div class="screen screen--3 notreVillage">
     <div class="container">
         <div class="group-title">
-            <h2 class="title__primary">Notre village</h2>
-            <h3 class="title__secondary">Votre séjour tout compris</h3>
-            <p><b>A seulement 100 mètres des pistes,</b> profitez de vacances "tout inclus" dans le village vacances.</p>
+            <h2 class="title__primary">{{trad.screen3.groupTitle.h2}}</h2>
+            <h3 class="title__secondary">{{trad.screen3.groupTitle.h3}}</h3>
+            <p>{{trad.screen3.groupTitle.paraph}}</p>
         </div>
 
-        <div class="group-bloc-image">
-            <div class="block-image-style2">
-                <img src="img/village/1.jpg" alt="" />
-                <div class="frame-text">
-                    <strong>Nouvel établissement de 250 chambres tout confort</strong>
+        <div class="group-bloc-image responsive">
+            {% for village in trad.notreVillage %}
+                <div class="block-image-style2">
+                    <img src="img/village/{{ loop.index }}.jpg" alt="" />
+                    <div class="frame-text">
+                        <strong>{{village.text}}</strong>
+                    </div>
                 </div>
-            </div>
-            <div class="block-image-style2">
-                <img src="img/village/2.jpg" alt="" />
-                <div class="frame-text">
-                    <strong>Pension Complète, repas à thème, pique-nique sur les pistes</strong>
-                </div>
-            </div>
-            <div class="block-image-style2">
-                <img src="img/village/3.jpg" alt="" />
-                <div class="frame-text">
-                    <strong>Forfait et matériel de glisse tout compris</strong>
-                </div>
-            </div>
-            <div class="block-image-style2">
-                <img src="img/village/4.jpg" alt="" />
-                <div class="frame-text">
-                    <strong>Clubs enfants dès 3 mois</strong>
-                </div>
-            </div>
+            {% endfor %}  
         </div>
-
     </div>
 </div>
 
 <div class="screen screen--4 votreOffre">
     <div class="container">
         <div class="group-title">
-            <h2 class="title__primary">Votre offre</h2>
-            <h3 class="title__secondary">tout compris</h3>
+            <h2 class="title__primary">{{trad.screen4.groupTitle.h2}}</h2>
+            <h3 class="title__secondary">{{trad.screen4.groupTitle.h3}}</h3>
         </div>
         <div class="group-icons">
-            <div class="icons-and-text">
-                <img src="img/pictos/1.png" alt="">
-                <span><b>Le ski sans limite</b> forfait 6 jours et prêt de matériel</span>
-            </div>
-             <div class="icons-and-text">
-                <img src="img/pictos/2.png" alt="">
-                <span><b>Chambre confortable et accueillante</b></span>
-            </div>
-            <div class="icons-and-text">
-                <img src="img/pictos/3.png" alt="">
-                <span><b>Activités</b> Raquettes, piscine, patinoire, fitness...</span>
-            </div>
-             <div class="icons-and-text">
-                <img src="img/pictos/4.png" alt="">
-                <span><b>Pension complète</b> buffets généreux et savoureux</span>
-            </div>
-            <div class="icons-and-text">
-                <img src="img/pictos/5.png" alt="">
-                <span><b>Clubs d'enfants</b> Dès 3 mois </span>
-            </div>
-             <div class="icons-and-text">
-                <img src="img/pictos/6.png" alt="">
-                <span><b>Animations</b>Soirée </span>
-            </div>
+            {% for offre in trad.votreOffre %}
+                <div class="icons-and-text">
+                    <div class="picto-icon"><img src="img/pictos/{{ loop.index }}.png" alt=""></div>
+                    <span>{{ offre.text }}</span>
+                </div>
+            {% endfor %} 
         </div>
     </div>
 </div>
@@ -135,36 +90,36 @@
             <div class="list-item">
                 <h4 class="title__special">haute-savoie</h4>
                 <ul class="list-design">
-                    <li>flaine</li>
-                    <li>Morzine - Portes du soleil</li>
+                    <li><span>flaine</span></li>
+                    <li><span>Morzine - Portes du soleil</span></li>
                 </ul>
             </div>
             <div class="list-item">
                 <h4 class="title__special">haute-savoie</h4>
                 <ul class="list-design">
-                    <li>flaine</li>
-                    <li>Morzine - Portes du soleil</li>
+                    <li><span>flaine</span></li>
+                    <li><span>Morzine - Portes du soleil</span></li>
                 </ul>
             </div>
             <div class="list-item">
                 <h4 class="title__special">haute-savoie</h4>
                 <ul class="list-design">
-                    <li>flaine</li>
-                    <li>Morzine - Portes du soleil</li>
+                    <li><span>flaine</span></li>
+                    <li><span>Morzine - Portes du soleil</span></li>
                 </ul>
             </div>
             <div class="list-item">
                 <h4 class="title__special">haute-savoie</h4>
                 <ul class="list-design">
-                    <li>flaine</li>
-                    <li>Morzine - Portes du soleil</li>
+                    <li><span>flaine</span></li>
+                    <li><span>Morzine - Portes du soleil</span></li>
                 </ul>
             </div>
             <div class="list-item">
                 <h4 class="title__special">haute-savoie</h4>
                 <ul class="list-design">
-                    <li>flaine</li>
-                    <li>Morzine - Portes du soleil</li>
+                    <li><span>flaine</span></li>
+                    <li><span>Morzine - Portes du soleil</span></li>
                 </ul>
             </div>
         </div>

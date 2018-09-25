@@ -1,5 +1,5 @@
 module.exports = {
-    "project": "[NOM DU PROJET]",
+    "project": "Les villages clubs du Soleil",
     "generic_button": "Je l'offre",
     "generic_url": "http://www.google.fr",
     "footer_title": "<strong class='highlight'>Commandez la carte cadeau Air France </strong>avant le 21/12 à offrir à vos proches pour la destination de leur choix.",
@@ -8,38 +8,89 @@ module.exports = {
         "title": "Invité de marque",
         "parag": "C'est un super paragraphe"
     },
-    "menus": [
-        {
-            "title": "Menu 1",
-            "slug": "menu1"
-        },
-        {
-            "title": "Menu 2",
-            "slug": "menu2"
-        },
-        {
-            "title": "Menu 3",
-            "slug": "menu3",
-            "additionalClass": "mob-only"
-        }
-    ],
     "menu_external": "Lien externe",
     "shop": {
         "before": "Je m'inscris",
         "after": "J'achète"
     },
-    "links": [
+    "screen1": {
+        "titleSpecial" : "Nouveauté",
+        "txt1" : "cet hiver, évadez-vous aux",
+        "txt2" : "2 Alpes",
+        "txt3"  : "offre exclusive-vente-privee",
+        "txt4"  : "-15%<sup>*</sup>",
+        "txt5"   : "sur votre séjour au ski"
+    },
+
+    "screen2": {
+        "groupTitle": {
+            "h2": "les 2 Alpes",
+            "h3": "Le must de la glisse",
+            "paraph": "<b>Situé à moins d'1 heure 30 de Grenoble,</b> les 2 Alpes est lune des plus grandes stations internationales de ski."
+        }
+    },
+
+    "screen3": {
+        "groupTitle": {
+            "h2": "Notre village",
+            "h3": "Votre séjour tout compris",
+            "paraph": "<b>A seulement 100 mètres des pistes,</b> profitez de vacances 'tout inclus' dans le village vacances."
+        }
+    },
+
+    "screen4": {
+        "groupTitle": {
+            "h2": "Votre offre",
+            "h3": "tout compris",
+        }
+    },
+
+    "slider2Alpes": [
         {
-            "universID": "4756497",
-            "productID": "11764700",
-            "label": "Jupe argentée"
+            "text": "Station familiale et festive, activités Indoor, Label famille plus"
         },
         {
-            "universID": "4756497",
-            "productID": "11764672",
-            "label": "Combinaison"
+            "text": "Station familiale et festive, activités Indoor, Label famille plus"
+        },
+        {
+            "text": "Station familiale et festive, activités Indoor, Label famille plus"
         }
     ],
+    "notreVillage": [
+        {
+            "text": "Nouvel établissement de 250 chambres tout confort"
+        },
+        {
+            "text": "Pension Complète, repas à thème, pique-nique sur les pistes"
+        },
+        {
+            "text": "Forfait et matériel de glisse tout compris"
+        },
+        {
+            "text": "Clubs enfants dès 3 mois"
+        }
+    ],
+    "votreOffre": [
+        {
+            "text": "<b>Le ski sans limite</b> forfait 6 jours et prêt de matériel"
+        },
+        {
+            "text": "<b>Chambre confortable et accueillante</b>"
+        },
+        {
+            "text": "<b>Activités</b> Raquettes, piscine, patinoire, fitness..."
+        },
+        {
+            "text": "<b>Pension complète</b> buffets généreux et savoureux"
+        },
+        {
+            "text": "<b>Clubs d'enfants</b> Dès 3 mois"
+        },
+        {
+            "text": "<b>Animations</b>Soirée "
+        }
+    ],
+
     "blocks": [
         {
             "product": {

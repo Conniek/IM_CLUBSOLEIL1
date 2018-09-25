@@ -3,20 +3,24 @@
 export default function (trigger) {
 
     $('.responsive').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [
             {
-                breakpoint: 768,
+                dots: true,
+                breakpoint: 769,
+                arrows: true,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
             },
             {
+                dots: true,
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
@@ -44,7 +48,27 @@ export default function (trigger) {
         arrows: false,
         speed: 300,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive: [
+            {
+                dots: true, 
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
 
     /*function stretchFeedbackSlider() {
