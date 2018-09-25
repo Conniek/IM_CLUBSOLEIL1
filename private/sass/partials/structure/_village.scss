@@ -363,11 +363,25 @@ ul {
 	.block-image-style1 {
 		width: 23%;
 		display: inline-block;
+		margin-right: 30px;
 	}
 }
 
 .slider__destinations {
 	margin-top: 40px;
+	margin-bottom: 80px !important;
+	.slick-list {
+		padding-top: 20px;
+
+		.title__special {
+			position: relative;
+			top: -20px;
+		}
+		.block-image-style1 h4 {
+			top: unset;
+			margin-top: 10px;
+		}
+	}
 }
 
 .mentions {

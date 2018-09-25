@@ -1073,10 +1073,20 @@ ul.list-design li {
 
 .group-img-list .block-image-style1 {
   width: 23%;
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 30px; }
 
 .slider__destinations {
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 80px !important; }
+  .slider__destinations .slick-list {
+    padding-top: 20px; }
+    .slider__destinations .slick-list .title__special {
+      position: relative;
+      top: -20px; }
+    .slider__destinations .slick-list .block-image-style1 h4 {
+      top: unset;
+      margin-top: 10px; }
 
 .mentions {
   margin-top: 20px;
