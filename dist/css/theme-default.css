@@ -1616,7 +1616,7 @@ ul.list-design li {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #000;
+  background: #e0e0e0;
   top: 0;
   left: 0;
   width: 100%;
