@@ -1043,7 +1043,8 @@ ul.list-design li {
   vertical-align: text-bottom;
   left: 50%;
   margin-left: -18px;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
   .chevron-down-round .icon-right-arrows-couple {
     margin: 0 auto;
     display: block;
@@ -1066,13 +1067,17 @@ ul.list-design li {
 .notreVillage .group-bloc-image {
   text-align: center;
   margin-top: 40px; }
+  @media (min-width: 62.5em) {
+    .notreVillage .group-bloc-image .slick-dots {
+      display: none; } }
   .notreVillage .group-bloc-image .block-image-style2 {
     width: 23%;
     display: inline-block;
     margin-right: 15px; }
     @media (min-width: 0em) and (max-width: 47.9375em) {
       .notreVillage .group-bloc-image .block-image-style2 {
-        width: 100%; } }
+        width: 100%;
+        margin-right: 0; } }
 
 .votreOffre {
   background: url(../img/bg-VotreOffre.jpg) no-repeat;

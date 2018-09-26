@@ -172,7 +172,7 @@ module.exports = {
         "txt2": "-15%<sup>*</sup>",
         "txt3": "avec le code promo",
         "codepromo": "LOVE2ALPES",
-        "cta": "J'en profites",
+        "cta": "J'en profite",
     },
     "links": {
         "generic": "https://www.villagesclubsdusoleil.com/fr/carte-rose-vp-hiver18-19?utm_source=carte-rose-VP&utm_medium=carte-rose-VP&utm_campaign=carte-rose-VP-les2alpes-hiver18-19",

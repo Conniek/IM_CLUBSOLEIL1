@@ -3,7 +3,7 @@
 export default function (trigger) {
 
     $('.responsive').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 300,
         arrows: false,
@@ -59,6 +59,7 @@ export default function (trigger) {
                 }
             },
             {
+                dots: true,
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,

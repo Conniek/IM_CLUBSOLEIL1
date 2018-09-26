@@ -316,6 +316,7 @@ ul {
 	left: 50%;
 	margin-left: -18px;
 	font-weight: bold;
+	cursor: pointer;
 
 	.icon-right-arrows-couple {
 		margin: 0 auto;
@@ -347,12 +348,18 @@ ul {
 	.group-bloc-image {
 		text-align: center;
 		margin-top: 40px;
+		@include breakpoint($b-desk) {
+			.slick-dots {
+				display: none
+			}
+		}
 		.block-image-style2 {
 			width: 23%;
 			display: inline-block;
 			margin-right: 15px;
 			@include breakpoint($b-mob) {
 				width: 100%;
+				margin-right: 0;
 			}
 		}		
 	}
