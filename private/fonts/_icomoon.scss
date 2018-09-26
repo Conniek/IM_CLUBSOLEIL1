@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-pictos2:before {
+  content: "\e910";
+}
 .icon-right-arrows-couple:before {
   content: "\e912";
 }
@@ -123,27 +127,6 @@
 .icon-carte-rose-avantage-2:before {
   content: "\e931";
 }
-.icon-logo-villageClubColor:before {
-  content: "\e913";
-}
-.icon-airfrance-by-perfectstay:before {
-  content: "\e937";
-}
-.icon-airfrance-picto:before {
-  content: "\e938";
-}
-.icon-logo-brand-b:before {
-  content: "\e910";
-}
-.icon-logo-brand-1b:before {
+.icon-logo:before {
   content: "\e911";
-}
-.icon-logo-brand-1:before {
-  content: "\e934";
-}
-.icon-logo-brand-2:before {
-  content: "\e935";
-}
-.icon-logo-brand:before {
-  content: "\e936";
 }

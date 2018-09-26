@@ -1,7 +1,7 @@
 <div class="screen screen--1 headerBanner">
     <div class="container">
         <div class="logo">
-            <img src="img/logo-villageClub.png" alt="" />
+            <span class="icon icon-logo"></span>
         </div>
         <div class="frameTitle">
             <div class="title__special">{{trad.screen1.titleSpecial}}</div>
@@ -71,7 +71,7 @@
         <div class="group-icons">
             {% for offre in trad.votreOffre %}
                 <div class="icons-and-text">
-                    <div class="picto-icon"><img src="img/pictos/{{ loop.index }}.png" alt=""></div>
+                    <div class="picto-icon"><span class="icon icon-pictos2"></span></div>
                     <span>{{ offre.text }}</span>
                 </div>
             {% endfor %} 
@@ -119,4 +119,4 @@
             {{trad.mentions}}
         </p>
     </div>
-</div>
+</div><img src="img/pictos/{{ loop.index }}.png" alt="">

@@ -300,6 +300,9 @@ input[type=button] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-pictos2:before {
+  content: "\e910"; }
+
 .icon-right-arrows-couple:before {
   content: "\e912"; }
 
@@ -399,29 +402,8 @@ input[type=button] {
 .icon-carte-rose-avantage-2:before {
   content: "\e931"; }
 
-.icon-logo-villageClubColor:before {
-  content: "\e913"; }
-
-.icon-airfrance-by-perfectstay:before {
-  content: "\e937"; }
-
-.icon-airfrance-picto:before {
-  content: "\e938"; }
-
-.icon-logo-brand-b:before {
-  content: "\e910"; }
-
-.icon-logo-brand-1b:before {
+.icon-logo:before {
   content: "\e911"; }
-
-.icon-logo-brand-1:before {
-  content: "\e934"; }
-
-.icon-logo-brand-2:before {
-  content: "\e935"; }
-
-.icon-logo-brand:before {
-  content: "\e936"; }
 
 @font-face {
   font-family: 'Open Sans';
@@ -882,6 +864,17 @@ ul.list-design li {
   font-weight: normal;
   color: #FFF;
   width: 15%; }
+  .icons-and-text .picto-icon {
+    width: 7rem;
+    overflow: hidden;
+    height: 7rem;
+    text-align: center;
+    margin: 0 auto 20px; }
+    .icons-and-text .picto-icon span {
+      font-size: 7rem;
+      line-height: 7rem;
+      left: 0;
+      position: relative; }
   @media (min-width: 0em) and (max-width: 47.9375em) {
     .icons-and-text {
       width: 45%; } }
@@ -1015,6 +1008,9 @@ ul.list-design li {
   .headerBanner .logo {
     max-width: 210px;
     margin: 0 auto; }
+    .headerBanner .logo .icon-logo {
+      color: #FFF;
+      font-size: 6rem; }
   .headerBanner .frameTitle {
     width: 60%;
     margin: 70px auto;
@@ -1174,6 +1170,10 @@ ul.list-design li {
 .mentions {
   text-align: center;
   padding: 40px 0; }
+
+.icon-logo {
+  font-size: 4rem;
+  color: #ca3a20; }
 
 .slider {
   position: relative;

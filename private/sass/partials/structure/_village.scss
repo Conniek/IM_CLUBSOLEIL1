@@ -128,6 +128,19 @@ ul {
 	font-weight: normal;
 	color: #FFF;
 	width: 15%;
+	.picto-icon {
+		width: 7rem;
+		overflow: hidden;
+		height: 7rem;
+		text-align: center;
+		margin: 0 auto 20px;
+		span {
+			font-size: 7rem;
+			line-height: 7rem;
+			left: 0;
+			position: relative;
+		}
+	}
 	@include breakpoint($b-mob) {
 		width: 45%;
 	}
@@ -284,6 +297,10 @@ ul {
 	.logo {
 		max-width: 210px;
 		margin: 0 auto;
+		.icon-logo {
+			color: #FFF;
+			font-size: 6rem;
+		}
 	}
 	.frameTitle {
 		width: 60%;
@@ -480,3 +497,7 @@ ul {
 	padding: 40px 0;
 }
 
+.icon-logo {
+	font-size: 4rem;
+	color: rgb(202, 58, 32);
+}
