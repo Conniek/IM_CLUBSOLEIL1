@@ -22,12 +22,12 @@ module.exports = {
         "fancybox": true
     },
     "operation": {
-        "code": "TESTGT",
+        "code": "IM_CLUBSOLEIL1",
         "id": "63387",
         "partnerID": "18739",
-        "date": "27/09/2026 22:00",
-        "titre": "METTRE UN TITRE",
-        "description": "AINSI QU'UNE DESCRIPTION"
+        "date": "08/10/2018 06:00",
+        "titre": "Les Villages clubs du Soleil",
+        "description": "Cet Hiver évadez vous au 2 Alpes !"
     },
     "marketingButton": {
         "beforeSale": "S’inscrire à la vente",
