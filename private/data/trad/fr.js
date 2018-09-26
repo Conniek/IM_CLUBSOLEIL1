@@ -166,7 +166,7 @@ module.exports = {
             "subtitle": "Flair"
         }
     ],
-    "mentions" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "mentions" : "*Conditions de l'offre: 15% de remise par personne pour un séjour d'une semaine minimum (8jours/7nuits) du 22/12/2018 au 27/04/2019 au Village Club des 2 Alpes avec le code promo LOVE2ALPES. Offre valable pour toute réservation du 08/10/2018 au 18/10/2018 inclus. Offre réservée aux particuliers, 2 pers. min/dossier - 5 pers. max/dossier. Offre non  rétroactive, non cumulable avec la remise partenaire, la remise fidélité et parrainage, les offres présentes dans le catalogue des Villages Clubs du Soleil hiver 2018-2019, les Ventes Flash et Dernières minutes, la remise chèques-vacances et e-chèques vacances ainsi qu'avec les avantages groupes.",
     "marketing": {
         "txt1": "offre exclusive vente-privee",
         "txt2": "-15%<sup>*</sup>",
