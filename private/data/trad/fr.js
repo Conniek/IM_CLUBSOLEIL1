@@ -50,13 +50,13 @@ module.exports = {
 
     "slider2Alpes": [
         {
-            "text": "Station familiale et festive, activités Indoor, Label famille plus"
+            "text": "96km de pistes de balisées. Coup de coeur pour des amateurs de freestyle."
         },
         {
-            "text": "Station familiale et festive, activités Indoor, Label famille plus"
+            "text": "Plus haut domaine skiable avec son glacier à 3600m."
         },
         {
-            "text": "Station familiale et festive, activités Indoor, Label famille plus"
+            "text": "Station familiale et festive, activités Indoor, Label famille plus."
         }
     ],
     "notreVillage": [
