@@ -71,7 +71,7 @@
         <div class="group-icons">
             {% for offre in trad.votreOffre %}
                 <div class="icons-and-text">
-                    <div class="picto-icon"><span class="icon icon-pictos2"></span></div>
+                    <div class="picto-icon"><span class="icon icon-pictos2 picto{{ loop.index }}"></span></div>
                     <span>{{ offre.text }}</span>
                 </div>
             {% endfor %} 
@@ -119,4 +119,4 @@
             {{trad.mentions}}
         </p>
     </div>
-</div><img src="img/pictos/{{ loop.index }}.png" alt="">
+</div>

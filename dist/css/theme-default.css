@@ -1104,7 +1104,7 @@ ul.list-design li {
           margin-bottom: 40px; }
           .votreOffre .group-icons .icons-and-text span {
             min-height: 50px;
-            width: 80%;
+            width: 100%;
             margin: 0 auto; } }
 
 .list-item {
@@ -1174,6 +1174,21 @@ ul.list-design li {
 .icon-logo {
   font-size: 4rem;
   color: #ca3a20; }
+
+.icons-and-text .picto-icon span.picto2 {
+  left: -198px; }
+
+.icons-and-text .picto-icon span.picto3 {
+  left: -406px; }
+
+.icons-and-text .picto-icon span.picto4 {
+  left: -606px; }
+
+.icons-and-text .picto-icon span.picto5 {
+  left: -782px; }
+
+.icons-and-text .picto-icon span.picto6 {
+  left: -956px; }
 
 .slider {
   position: relative;
