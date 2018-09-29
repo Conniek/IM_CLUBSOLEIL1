@@ -137,33 +137,55 @@ module.exports = {
     "sliderDestinations": [
         {
             "title": "haute-savoie",
-            "img": "arc",
-            "subtitle": "Flair"
+            "subtitle": "Flaine"
         },
         {
             "title": "haute-savoie",
-            "img": "arc",
-            "subtitle": "Flair"
+            "subtitle": "Morzine - Portes du soleil"
         },
         {
-            "title": "haute-savoie",
-            "img": "arc",
-            "subtitle": "Flair"
+            "title": "savoie",
+            "subtitle": "Arc 1800"
         },
         {
-            "title": "haute-savoie",
-            "img": "arc",
-            "subtitle": "Flair"
+            "title": "savoie",
+            "subtitle": "Les ménuires"
         },
         {
-            "title": "haute-savoie",
-            "img": "arc",
-            "subtitle": "Flair"
+            "title": "savoie",
+            "subtitle": "Valmorel"
         },
         {
-            "title": "haute-savoie",
-            "img": "arc",
-            "subtitle": "Flair"
+            "title": "savoie",
+            "subtitle": "Les Karellis"
+        },
+        {
+            "title": "Isère",
+            "subtitle": "LES 2 ALPES"
+        },
+        {
+            "title": "Isère",
+            "subtitle": "OZ EN OISANS - ALPE D'HUEZ"
+        },
+        {
+            "title": "Hautes-Alpes",
+            "subtitle": "MONTGENÈVRE"
+        },
+        {
+            "title": "Hautes-Alpes",
+            "subtitle": "Vars"
+        },
+        {
+            "title": "Hautes-Alpes",
+            "subtitle": "ORCIÈRES MERLETTE 1850"
+        },
+        {
+            "title": "Pyrénées",
+            "subtitle": "SUPERBAGNÈRES"
+        },
+        {
+            "title": "Pyrénées",
+            "subtitle": "VAL LOURON"
         }
     ],
     "mentions" : "*Conditions de l'offre: 15% de remise par personne pour un séjour d'une semaine minimum (8jours/7nuits) du 22/12/2018 au 27/04/2019 au Village Club des 2 Alpes avec le code promo LOVE2ALPES. Offre valable pour toute réservation du 08/10/2018 au 18/10/2018 inclus. Offre réservée aux particuliers, 2 pers. min/dossier - 5 pers. max/dossier. Offre non  rétroactive, non cumulable avec la remise partenaire, la remise fidélité et parrainage, les offres présentes dans le catalogue des Villages Clubs du Soleil hiver 2018-2019, les Ventes Flash et Dernières minutes, la remise chèques-vacances et e-chèques vacances ainsi qu'avec les avantages groupes.",

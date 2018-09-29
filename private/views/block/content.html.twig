@@ -102,7 +102,7 @@
                 {% for slide in trad.sliderDestinations %}
                     <div class="block-image-style1">
                         <h3 class="title__special">{{ slide.title }}</h4>
-                        <img src="img/destinations/{{ slide.img }}.jpg" alt="{{ slide.img }}" />
+                        <img src="img/destinations/{{ loop.index }}.jpg" alt="{{ slide.subtitle }}" />
                         <h4 class="title__classic">{{ slide.subtitle }}</h4>
                     </div>
                 {% endfor %} 
